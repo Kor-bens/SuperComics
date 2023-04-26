@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#logo-superman {
+    width: 6vw;
+    height: 12vh;
+}
+
+#superman {
+    width: 19vw;
+    height: 75vh;
+    margin-left: 7vw;
+    position: relative;
+
+}
+
+.logo {
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+}
+
+#copyleft {
+    width: 1.6vw;
+    display: grid;
+}
+
+.contain {
+    display: grid;
+    grid-template-areas: "nav "
+        "main"
+        "footer";
+}
+
+nav {
+    grid-area: nav;
+    box-shadow: 0px 3px 10px rgb(203, 195, 195);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+        "n1 n2 n3 n4";
+    justify-items: center;
+    align-items: center;
+}
+
+nav1 {
+    grid-area: n1;
+    height: 100px;
+}
+
+.nav2 {
+    grid-area: n2;
+}
+
+.nav3 {
+    grid-area: n3;
+}
+
+.nav4 {
+    grid-area: n4;
+}
+
+.nav-text {
+    font-size: 3vmin;
+    font-family: 'Comic Neue', cursive;
+    color: rgb(116, 115, 115);
+}
+
+a {
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#main {
+    height: 80vh;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 25% 12% 61%;
+    grid-template-areas: "s l c";
+    column-gap: 1vw;
+    border-bottom: 1px solid rgb(193, 193, 193);
+}
+
+#bloc-superman {
+    margin-top: 25px;
+    grid-area: "s";
+}
+
+.side-bar-logo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+    grid-area: "l";
+
+}
+
+.logo-text {
+    font-size: 2vmin;
+    font-weight: 800;
+    font-family: 'Comic Neue', cursive;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 17% 73%;
+    grid-area: "c";
+
+}
+
+.titre-superman {
+    margin-top: 6vh;
+    font-weight: bold;
+    font-family: 'Comic Neue', cursive;
+}
+
+.titre-video {
+    margin-top: 1vh;
+}
+
+embed {
+    width: 99%;
+    height: 100%;
+
+}
+
+
+
+footer {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0% 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.2vmin;
+}
+
+#bloc-copyleft {
+    display: grid;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.gradient {
+    display: grid;
+    margin-top: 1.5vh;
+    z-index: -1;
+    position: absolute;
+    margin-left: 1vw;
+    width: 22.5vw;
+    height: 76.5vh;
+    background: radial-gradient(circle, rgba(253, 46, 38, 1) 0%, rgba(255, 144, 97, 1) 40%, rgba(255, 153, 102, 1) 50%, rgba(255, 144, 97, 1) 60%, rgba(253, 46, 38, 1) 100%);
+    opacity: 0.5;
+    border-radius: 0 0 0 3%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    nav {
+        grid-area: nav;
+        box-shadow: 0px 3px 10px rgb(203, 195, 195);
+        display: grid;
+        grid-template-columns: 10% 25% 25% 25%;
+        grid-template-areas:
+            "n1 n2 n3 n4";
+        justify-items: center;
+        align-items: center;
+    }
+
+    #logo-superman{
+        width: 10vw;
+        height: 12vh;
+    }
+
+    #main {
+        height: 100%;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 25% 12% 61%;
+        grid-template-rows: 25% 1fr;
+        grid-template-areas: "s l c";
+    }
+
+    .side-bar-logo {
+
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: 95%;
+        align-items: center;
+        grid-column: 1/6;
+        grid-row: 1/2;
+        margin: 0 auto;
+        column-gap: 1vw;
+        text-align: center;
+    }
+
+    .logo {
+        width: 5vw;
+        height: 5vh;
+    }
+
+    .logo-text {
+display: flex;  
+  margin-bottom:1px;
+}
+
+    .bloc-logo{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;   
+     }
+
+    #bloc-superman {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 2/2;
+
+    }
+
+    #superman {
+        height: 58vh;     
+           top: -3vh;
+    }
+
+    .gradient {
+        display: grid;
+        margin-top: 17.5vh;
+        z-index: -1;
+        position: absolute;
+        margin-left: 1vw;
+        width: 22.5vw;
+        height: 54.5vh;
+        background: radial-gradient(circle, rgba(253, 46, 38, 1) 0%, rgba(255, 144, 97, 1) 40%, rgba(255, 153, 102, 1) 50%, rgba(255, 144, 97, 1) 60%, rgba(253, 46, 38, 1) 100%);
+        opacity: 0.5;
+        border-radius: 0 0 0 3%;
+    }
+
+    .content {
+        display: grid;
+        grid-template-rows: 5% 90%;
+        grid-column: 2/6;
+        margin-left: 1.5vw;
+        margin-right: 2vw;
+    }
+
+    .titre-superman {
+        margin-top: 2vh;
+        font-weight: bold;
+        font-family: 'Comic Neue', cursive;
+    }
+}
+
+.video {
+    display: grid;
+    margin-top: 9vh;
+}
+
+embed {
+    width: 99%;
+    height: 89%;
+}
+
+footer{
+}
+#copyleft{
+    width: 4vw;
+}
+
+footer p {
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.9vmin;
+    font-weight: 900;
+}
