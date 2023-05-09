@@ -93,7 +93,7 @@ body {
 
     #bloc-superman {
         margin-top: 25px;
-        grid-area: "s";
+        /* grid-area: "s"; */
     }
 
     .side-bar-logo {
@@ -102,7 +102,7 @@ body {
         align-items: center;
         margin-top: 2.5vh;
         margin-bottom: 5vh;
-        grid-area: "l";
+        /* grid-area: "l"; */
         text-align: center;
 
     }
@@ -118,7 +118,7 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 17% 73%;
-        grid-area: "c";
+        /* grid-area: "c"; */
 
     }
 
